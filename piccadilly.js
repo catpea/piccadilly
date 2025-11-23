@@ -187,9 +187,12 @@ class PiccadillyAnimator {
   }
 }
 
-// CLI interface
+// CLI interface - handle both direct execution and npm bin symlinks
 const __filename = fileURLToPath(import.meta.url);
-if (process.argv[1] === __filename) {
+const isMainModule = process.argv[1] &&
+  fs.realpathSync(process.argv[1]) === fs.realpathSync(__filename);
+
+if (isMainModule) {
   // Check for ffmpeg
   if (!checkFfmpeg()) {
     console.error('❌ Error: ffmpeg not found!');
