@@ -1,0 +1,40 @@
+{
+  "name": "piccadilly",
+  "version": "1.0.0",
+  "description": "Create delightfully silly animated AVIF files with random frame durations. Perfect for pre-AI video magic!",
+  "main": "piccadilly.js",
+  "type": "module",
+  "bin": {
+    "piccadilly": "piccadilly.js"
+  },
+  "scripts": {
+    "save": "git add .; git commit -m 'Updated Release'; npm version patch; npm publish; git push --follow-tags;",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "avif",
+    "animation",
+    "ffmpeg",
+    "image",
+    "video",
+    "cli",
+    "animator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catpea/piccadilly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catpea/piccadilly/issues"
+  },
+  "homepage": "https://catpea.github.io/piccadilly",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/catpea"
+  }
+}
