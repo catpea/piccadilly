@@ -20,7 +20,7 @@
     "cli",
     "animator"
   ],
-  "author": "",
+  "author": "catpea (https://github.com/catpea)",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
