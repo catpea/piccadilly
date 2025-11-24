@@ -1,6 +1,6 @@
 {
   "name": "piccadilly",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create delightfully silly animated AVIF files with random frame durations. Perfect for pre-AI video magic!",
   "main": "piccadilly.js",
   "type": "module",
